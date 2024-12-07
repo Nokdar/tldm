@@ -1,0 +1,174 @@
+		* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+		body {
+    		font-family: 'Arial', sans-serif;
+    		background: linear-gradient(120deg, #f0f4f8, #d9e7eb);
+    		color: #334e68;
+    		line-height: 1.6;
+    		margin: 0;
+    		padding: 0;
+    		display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		min-height: 100vh;
+    		font-size: 1rem;
+		}
+
+		header {
+    		background: linear-gradient(90deg, #2f4858, #336b87);
+    		color: #ffffff;
+    		text-align: center;
+    		padding: 2rem;
+   			width: 100%;
+   			font-size: 2rem; 
+    		box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    		text-transform: uppercase;
+    		letter-spacing: 2px;
+    		font-weight: bold;
+    		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+		}
+
+		footer {
+    		text-align: center;
+    		padding: 1rem;
+    		background: linear-gradient(90deg, #2f4858, #6096ba);
+    		color: #eaf4f8;
+    		margin-top: auto;
+    		width: 100%;
+    		font-size: 0.8rem;
+		    letter-spacing: 1px;
+		}
+
+		section.vertic {
+			display: flex;
+    		flex-direction: column;
+    		align-items: center;
+    		gap: 2rem;
+		}
+
+		.contLet {
+    		display: flex;
+    		flex-wrap: wrap;
+    		gap: 1.5rem;
+    		padding: 2rem;
+    		max-width: 90%;
+    		justify-content: center;
+    	}
+
+    	#creator {
+		    width: 100%;
+		    max-width: 800px;
+		    gap: 0.8rem;
+		    padding: 1rem;
+		}
+
+		input#textIn {
+		    padding: 0.8rem;
+		    font-size: 1rem;
+		    width: 100%;
+		    margin-right: 0.5rem;
+		    border: 2px solid #6096ba;
+		    border-radius: 5px;
+		    outline: none;
+		    transition: border-color 0.3s ease;
+		}
+
+		input#textIn:focus {
+		    border-color: #336b87; 
+		}
+
+		button#convBtn, button#lghtModeBtn {
+		    padding: 0.8rem 1.5rem;
+		    font-size: 1rem;
+		}
+
+		button#convBtn {
+		    background: linear-gradient(90deg, #336b87, #6096ba);
+		    border: none;
+		    border-radius: 5px;
+		    color: #ffffff;
+		    font-weight: bold;
+		    text-transform: uppercase;
+		    letter-spacing: 1px;
+		    cursor: pointer;
+		    transition: background-color 0.3s ease, transform 0.2s ease;
+		    
+		}
+
+		button#convBtn:hover {
+		    background: linear-gradient(90deg, #2f4858, #336b87);
+		    transform: scale(1.05);
+		}
+
+		button#convBtn:active {
+		    transform: scale(1); 
+		    background: #2f4858;
+		}
+
+		button#lghtModeBtn {
+        background: linear-gradient(90deg, #3c0000, #6b0000);
+        border: none;
+        border-radius: 5px;
+        color: #ffcccc;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+	    }
+
+	    button#lghtModeBtn:hover {
+	        background: linear-gradient(90deg, #6b0000, #3c0000);
+	        transform: scale(1.05);
+	    }
+
+	    button#lghtModeBtn:active {
+	        transform: scale(1);
+	        background: #3c0000;
+	    }
+
+
+
+
+
+
+	    /* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 1.5rem;
+        font-size: 1.5rem;
+    }
+
+    footer {
+        padding: 0.8rem;
+        font-size: 0.7rem;
+    }
+
+    section.vertic {
+        gap: 1.5rem;
+    }
+
+    .contLet {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    input#textIn {
+        font-size: 0.9rem;
+        padding: 0.6rem;
+    }
+
+    button#convBtn, button#lghtModeBtn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    #creator {
+        min-width: 90%; /* Adjust for mobile */
+        gap: 0.5rem;
+    }
+}
