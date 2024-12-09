@@ -4,26 +4,30 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>TLDM</title>
 	<link rel="icon" type="image/x-icon" href="fileLetters/errorskull.png">
-	<link id="cssId" rel="stylesheet" href="lightmode.css">
+	<link id="cssId" rel="stylesheet" href="lightmode2.css">
 </head>
 
 
 <body>
 <header>The Letter Doesn't Matter</header>
-<section class="vertic">
-	<div id="creator">
-		<input type="text" id="textIn" placeholder="Write your text..."><BR><BR>
-		<button id="convBtn">Convert</button>
+<section id="wholeDocument">
+	<div class="vertic">
+		<div id="creator">
+			<textarea id="textIn" placeholder="Write your text..." cols=1 rows=15 autofocus></textarea><br>
+			<button id="convBtn">Convert</button>
+			<button id="printBtn">Print</button>
+		</div>
 	</div>
-	<div id="contLet">
+	<div class=vertic>
+		<div id="contLet">
+		</div>
+		<div>
+			<img src="fileLetters/john1.png"><br>
+			<button id="lghtModeBtn"></button>
+		</div>
 	</div>
 </section>
-<section class=vertic>
-	<div>
-		<img src="fileLetters/john1.png"><br>
-		<button id="lghtModeBtn"></button>
-	</div>
-</section>
+
 <footer>created by <b>Nokdar</b> & <b>Matcha</b></footer>
 
 <script type="text/javascript" src="darkmodelogic.js"></script>
