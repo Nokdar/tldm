@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #334e68;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url('fileLetters/paperbackground.png');/*tu popraw tło*/
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#contLet{
+    padding: 1rem;
+    text-align: left;
+}
+
+/*@media print {
+body {
+   content:url('fileLetters/paperbackground.png');
+  }
+}*/

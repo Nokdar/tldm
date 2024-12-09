@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #334e68;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-image: url('fileLetters/paperbackground.png');/*tu popraw tło*/
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 100% 600px;
+}
+
+header {
+    background: linear-gradient(90deg, #2f4858, #336b87);
+    color: #ffffff;
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(90deg, #2f4858, #6096ba);
+    color: #eaf4f8;
+    margin-top: auto;
+    width: 100%;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+section#wholeDocument {
+    background-color: rgba(255,255,255, 0.5); /*tu popraw tło*/
+    width: 98%;
+    height: 60%;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+
+div.vertic {
+    width: 49%; 
+    height: 100%;
+    float: left;
+    margin: 0 0.5%; 
+    box-sizing: border-box;
+}
+
+#creator {
+    width: 100%;
+    max-width: 800px;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+
+#contLet{
+    padding: 1rem;
+    text-align: left;
+}
+
+.pEnter {
+    padding:0rem;
+    margin:0rem;
+    gap:0rem;
+}
+
+textarea#textIn {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    margin-right: 0.5rem;
+    border: 2px solid #6096ba;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: none;
+    font-family: 'Arial', sans-serif;
+	font-size: 1rem;
+    background-color: rgba(255,255,255, 0.5);
+}
+
+input#textIn:focus {
+    border-color: #336b87; 
+}
+
+button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+
+button {
+    background: linear-gradient(90deg, #336b87, #6096ba);
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2f4858, #336b87);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1); 
+    background: #2f4858;
+}
+
+button#lghtModeBtn {
+	background: linear-gradient(90deg, #3c0000, #6b0000);
+	border: none;
+	border-radius: 5px;
+	color: #ffcccc;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button#lghtModeBtn:hover {
+    background: linear-gradient(90deg, #6b0000, #3c0000);
+    transform: scale(1.05);
+}
+
+button#lghtModeBtn:active {
+    transform: scale(1);
+    background: #3c0000;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; 
+        padding: 0rem;
+    }
+
+    header {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.7rem; 
+        padding: 0.8rem;
+    }
+
+    section#wholeDocument {
+        width: 100%;
+        height: auto; 
+    }
+
+    div.vertic {
+        width: 100%; 
+        height: auto; 
+        float: none; 
+        margin: 0 0 1rem 0; 
+    }
+
+    #creator {
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    textarea#textIn {
+        font-size: 0.9rem; 
+    }
+
+    button#convBtn, button#lghtModeBtn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem; 
+    }
+}

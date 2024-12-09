@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #e0e0e0; /* Light text for dark background */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    font-size: 1rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #121212; /* Dark background for the body */
+}
+
+header {
+    background: linear-gradient(90deg, #1f2933, #3b4049); /* Darker gradient for header */
+    color: #f5f5f5; /* Bright text for contrast */
+    text-align: center;
+    padding: 2rem;
+    width: 100%;
+    font-size: 2rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6); /* Darker shadow */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Subtle shadow for text */
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(90deg, #1f2933, #4a5568); /* Match header gradient */
+    color: #a0aec0; /* Muted text color for footer */
+    margin-top: auto;
+    width: 100%;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+section#wholeDocument {
+    width: 95%;
+    height: 60%;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #121212; /* Match body background */
+    color: #e0e0e0; /* Light text */
+}
+
+div.vertic {
+    width: 49%; 
+    height: 100%;
+    float: left;
+    margin: 0 0.5%; 
+    box-sizing: border-box;
+}
+
+#creator {
+    width: 100%;
+    max-width: 800px;
+    gap: 0.8rem;
+    padding: 1rem;
+}
+
+#contLet{
+    padding: 1rem;
+}
+
+textarea#textIn {
+    padding: 0.8rem;
+    font-size: 1rem;
+    width: 100%;
+    margin-right: 0.5rem;
+    background-color: #1a202c; 
+    color: #e0e0e0; 
+    border: 2px solid #4a5568; 
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+    resize: none;
+}
+
+input#textIn:focus {
+    border-color: #718096; 
+}
+
+button#convBtn, button#lghtModeBtn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+}
+
+button#convBtn {
+    background: linear-gradient(90deg, #4a5568, #718096); 
+    border: none;
+    border-radius: 5px;
+    color: #e0e0e0; 
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button#convBtn:hover {
+    background: linear-gradient(90deg, #2d3748, #4a5568); 
+    transform: scale(1.05);
+}
+
+button#convBtn:active {
+    transform: scale(1); 
+    background: #2d3748; 
+}
+
+button#lghtModeBtn {
+    background: linear-gradient(90deg, #7f1d1d, #9b2c2c); /* Dark red gradient */
+    border: none;
+    border-radius: 5px;
+    color: #fed7d7; /* Light text color */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button#lghtModeBtn:hover {
+    background: linear-gradient(90deg, #63171b, #7f1d1d); /* Darker hover state */
+    transform: scale(1.05);
+}
+
+button#lghtModeBtn:active {
+    transform: scale(1);
+    background: #63171b; /* Solid color for active state */
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 0.9rem; 
+        padding: 0rem;
+    }
+
+    header {
+        font-size: 1.5rem;
+        padding: 1.5rem;
+    }
+
+    footer {
+        font-size: 0.7rem; 
+        padding: 0.8rem;
+    }
+
+    section#wholeDocument {
+        width: 100%;
+        height: auto; 
+    }
+
+    div.vertic {
+        width: 100%; 
+        height: auto; 
+        float: none; 
+        margin: 0 0 1rem 0; 
+    }
+
+    #creator {
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    textarea#textIn {
+        font-size: 0.9rem; 
+    }
+
+    button#convBtn, button#lghtModeBtn {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.9rem; 
+    }
+}
